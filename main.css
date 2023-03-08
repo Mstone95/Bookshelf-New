@@ -1,0 +1,269 @@
+* {
+    /*default styling*/
+    padding: 0;
+    margin: 0;
+
+}
+
+body {
+    /*body styling*/
+    background-image: url("images/cedarShingles.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.theVoid {
+    background-image: none;
+    background-color: white;
+}
+
+.theCan {
+    background-image: url("images/trash-can.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 80vw;
+    color: aqua;
+    font-size: 50px;
+    font-family: monospace;
+    text-shadow: 6px 6px 2px rgb(83, 114, 116);
+    display: flex;
+    justify-content: center;
+}
+
+.contactInfo,
+.aboutInfo {
+    font-size: 4.5rem;
+    text-align: center;
+    font-weight: bolder;
+    padding: 40px;
+}
+
+.aboutInfo {
+    font-size: 3rem;
+    width: 90vw;
+
+}
+
+.info {
+    margin-top: 100px;
+    font-size: 2rem;
+}
+
+.rightSide,
+.leftSide {
+    /*Styling shared between right and left side sections*/
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    gap: 10px;
+    background-image: url("images/turquoiseGradient.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.rightSide {
+    /* Right side section*/
+    height: 78vh;
+    width: 30vw;
+}
+
+.leftSide {
+    /* Left side section*/
+    width: 42vw;
+    height: 90vh;
+}
+
+.bookShelf,
+.bookPreviewSection {
+    /* Shared between bookshelf and book info preview*/
+    background-color: antiquewhite;
+    border-radius: 20px;
+    width: 100%;
+    flex: 1;
+    background-image: url("images/floor.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-y: auto;
+}
+
+h1 {
+    /* All largest labels*/
+    color: lightsalmon;
+    font-family: fantasy;
+    font-weight: bolder;
+    font-size: 3rem;
+    text-shadow: 5px 5px 5px black;
+    background-color: rgba(255, 235, 205, 0.5);
+    padding: 20px;
+    border-radius: 50%;
+    text-align: center;
+
+}
+
+.bookCover {
+    /* For each book cover*/
+    color: gold;
+    width: 150px;
+    height: 168px;
+    justify-content: center;
+    background-color: darkgreen;
+    margin: 20px;
+    font-size: 1.5rem;
+    overflow: hidden;
+    text-align: center;
+    line-height: 1.75rem;
+    word-wrap: break-word;
+    padding: 8px;
+    border: 2px solid black;
+    border-left: 25px solid brown;
+    box-shadow: 4px 4px 8px 4px gray;
+    /* box-sizing: border-box; */
+}
+
+.bookCovers {
+    /* the entire list of book covers*/
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    list-style: none;
+    justify-content: center;
+}
+
+h2 {
+    /* Author text*/
+    color: darkblue;
+    font-size: 2rem;
+}
+
+h3 {
+    /* Subject and language text */
+    color: black;
+    font-size: 1.5rem;
+}
+
+h2,
+h3 {
+    /* Author text and Subject and language text */
+    text-align: center;
+    margin: 20px;
+    font-family: monospace;
+    text-shadow: 3px 3px 4px rgb(235, 161, 122);
+    font-weight: bold;
+}
+
+h4{
+    margin-top: -9vh;
+    text-align: center;
+    text-shadow: 6px 6px 2px blue;
+    width: 16vw;
+}
+
+.title,
+.contact,
+.aboutInfo,
+.info {
+    /* Title of the selected book, displayed in preview*/
+    color: aquamarine;
+    background-color: rgba(255, 255, 255, 0);
+    font-family: monospace;
+    text-shadow: 6px 6px 2px rgb(139, 98, 76);
+}
+
+.favorite {
+    color: yellow;
+
+}
+
+.notFavorite {
+    color: black;
+
+}
+
+.faveButton,
+.notFavorite,
+.favorite,
+.editButton {
+    font-size: 2rem;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+}
+
+.navBarList a,
+.navBarList li {
+    color: yellow;
+    text-decoration: none;
+    font-size: 150%;
+    font-family: sans-serif;
+    text-shadow: 6px 6px 2px rgb(139, 98, 76);
+}
+
+.navBarList {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 10vh;
+    padding-top: 40px;
+
+}
+
+.navBarList li {
+    align-self: center;
+}
+
+.addBookBtn {
+    width: 10vw;
+    height: 10vw;
+    background-image: url("images/doorbell.webp");
+    background-size: 160%;
+    background-repeat: no-repeat;
+    background-position: 50% 47%;
+    border-radius: 50%;
+    border: brown;
+    margin-top: -8vh;
+
+}
+
+.bookInput {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    justify-content: center;
+    gap: 2vh;
+
+}
+
+.bookInput input,
+.enter,
+.update {
+    width: 90%;
+    height: 10%;
+    box-shadow: 4px 4px 4px rgb(132, 85, 59);
+    font-size: 150%;
+}
+
+.bookInput input {
+    padding: 3px;
+}
+
+.commentNotifier {
+    color: yellow;
+    font-size: 3rem;
+    margin-left: 10px;
+}
+
+.editButton {
+    color: aqua;
+}
